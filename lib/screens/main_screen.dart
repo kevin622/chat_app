@@ -60,7 +60,9 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                     height: 5,
                   ),
                   Text(
-                    isSignupScreen ? "Signup to continue" : "Signin to continue",
+                    isSignupScreen
+                        ? "Signup to continue"
+                        : "Signin to continue",
                     style: const TextStyle(
                       color: Colors.white,
                       fontSize: 15,
@@ -73,11 +75,11 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
           ),
           // 배경
           AnimatedPositioned(
-            duration: const Duration(milliseconds: 500),
+            duration: const Duration(milliseconds: 200),
             curve: Curves.easeIn,
             top: 180,
             child: AnimatedContainer(
-              duration: const Duration(milliseconds: 500),
+              duration: const Duration(milliseconds: 200),
               curve: Curves.easeIn,
               height: isSignupScreen ? 280 : 250,
               width: MediaQuery.of(context).size.width - 40,
@@ -112,7 +114,9 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                               style: TextStyle(
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
-                                color: !isSignupScreen ? Palette.activeColor : Palette.textColor1,
+                                color: !isSignupScreen
+                                    ? Palette.activeColor
+                                    : Palette.textColor1,
                               ),
                             ),
                             if (!isSignupScreen)
@@ -140,7 +144,9 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                               style: TextStyle(
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
-                                color: isSignupScreen ? Palette.activeColor : Palette.textColor1,
+                                color: isSignupScreen
+                                    ? Palette.activeColor
+                                    : Palette.textColor1,
                               ),
                             ),
                             if (isSignupScreen)
@@ -170,13 +176,15 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                                 color: Palette.iconColor,
                               ),
                               enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(color: Palette.textColor1),
+                                borderSide:
+                                    BorderSide(color: Palette.textColor1),
                                 borderRadius: BorderRadius.all(
                                   Radius.circular(35),
                                 ),
                               ),
                               focusedBorder: OutlineInputBorder(
-                                borderSide: BorderSide(color: Palette.textColor1),
+                                borderSide:
+                                    BorderSide(color: Palette.textColor1),
                                 borderRadius: BorderRadius.all(
                                   Radius.circular(35),
                                 ),
@@ -199,13 +207,15 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                                 color: Palette.iconColor,
                               ),
                               enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(color: Palette.textColor1),
+                                borderSide:
+                                    BorderSide(color: Palette.textColor1),
                                 borderRadius: BorderRadius.all(
                                   Radius.circular(35),
                                 ),
                               ),
                               focusedBorder: OutlineInputBorder(
-                                borderSide: BorderSide(color: Palette.textColor1),
+                                borderSide:
+                                    BorderSide(color: Palette.textColor1),
                                 borderRadius: BorderRadius.all(
                                   Radius.circular(35),
                                 ),
@@ -228,13 +238,15 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                                 color: Palette.iconColor,
                               ),
                               enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(color: Palette.textColor1),
+                                borderSide:
+                                    BorderSide(color: Palette.textColor1),
                                 borderRadius: BorderRadius.all(
                                   Radius.circular(35),
                                 ),
                               ),
                               focusedBorder: OutlineInputBorder(
-                                borderSide: BorderSide(color: Palette.textColor1),
+                                borderSide:
+                                    BorderSide(color: Palette.textColor1),
                                 borderRadius: BorderRadius.all(
                                   Radius.circular(35),
                                 ),
@@ -263,13 +275,15 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                                   color: Palette.iconColor,
                                 ),
                                 enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(color: Palette.textColor1),
+                                  borderSide:
+                                      BorderSide(color: Palette.textColor1),
                                   borderRadius: BorderRadius.all(
                                     Radius.circular(35),
                                   ),
                                 ),
                                 focusedBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(color: Palette.textColor1),
+                                  borderSide:
+                                      BorderSide(color: Palette.textColor1),
                                   borderRadius: BorderRadius.all(
                                     Radius.circular(35),
                                   ),
@@ -292,13 +306,15 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                                   color: Palette.iconColor,
                                 ),
                                 enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(color: Palette.textColor1),
+                                  borderSide:
+                                      BorderSide(color: Palette.textColor1),
                                   borderRadius: BorderRadius.all(
                                     Radius.circular(35),
                                   ),
                                 ),
                                 focusedBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(color: Palette.textColor1),
+                                  borderSide:
+                                      BorderSide(color: Palette.textColor1),
                                   borderRadius: BorderRadius.all(
                                     Radius.circular(35),
                                   ),
@@ -321,7 +337,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
           ),
           // 텍스트 폼 필드
           AnimatedPositioned(
-            duration: const Duration(milliseconds: 500),
+            duration: const Duration(milliseconds: 200),
             curve: Curves.easeIn,
             top: isSignupScreen ? 430 : 390,
             left: 0,
